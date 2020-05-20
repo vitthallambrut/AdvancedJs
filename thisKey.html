@@ -1,0 +1,30 @@
+<script>
+    // "use strict"
+    // console.log(this);
+
+    // function sum(){
+    //     var add = 2+2;
+    //     console.log("add of two no "+add);
+    //     console.log(this);
+    // }
+    // sum();
+
+    const lams = {
+        name : "vitthal lambrut",
+        qualif : "MCA",
+        sum : function(){
+            var add = 2+2;
+            console.log("add of two no "+add);
+            console.log(this.name);
+            console.log(this);
+
+            function child(){
+                var name = "lambrut";
+                console.log("child method name "+name);
+                console.log(this);
+            }
+            child();
+        }
+    }
+    lams.sum();
+</script>

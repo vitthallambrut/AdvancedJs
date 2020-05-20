@@ -1,0 +1,30 @@
+<!-- Callback Function -->
+
+<script>
+    // const funA = ()=>{
+
+    //     setTimeout(function(){
+    //         console.log(`welcome FunA`);
+    //     },3000);
+        
+    // }
+
+    // const funB = ()=>{
+    //     console.log(`welcome FunB`);
+    // }
+
+    // funA();
+    // funB();
+
+    const person1 = (friend, callfriend)=>{
+        console.log(`I am busy right now.I am talking to ${friend}. I will call you back.`);
+        callfriend();
+    }
+    
+    const person2 = ()=>{
+        console.log(`Hey what's up. I call back you dekha.`);
+    }
+
+    person1("bc", person2);
+    
+</script>

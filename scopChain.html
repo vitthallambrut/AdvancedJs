@@ -1,0 +1,22 @@
+<!-- scope chain is used to resolve the value of variable names in javascript. -->
+<script>
+    "use strict"
+    var a = "Hello guys...";
+
+    function first(){
+        var b = "How are you?..";
+        second();
+
+        function second(){
+            var c = "Myself vitthal lambrut";
+            console.log(a+b+c);
+        }
+    }
+
+    // function three(){
+    //     var d = "....plzzz share and subscribe my channel";
+    //     console.log(a+b+c+d);
+    // }
+    
+    first();
+</script>
